@@ -114,8 +114,26 @@
             border: 1px solid black;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: flex-start;
+        }
+
+        .container12 div:nth-child(2){
+            align-self: center;
+        }
+
+        .container13{
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .container13 div:nth-child(2){
+            align-self: flex-end;
         }
 
     </style>
@@ -168,12 +186,17 @@
         </div>
 
         <div class="container12">
-            <div class="size">1</div>
-            <div class="size">2</div>
+            <div class="size">1111</div>
+            <div class="size">22222</div>
         </div>
 
         <div>
             <div class="size">1</div>
+        </div>
+
+        <div class="container13">
+            <div class="size">1111</div>
+            <div class="size">22222</div>
         </div>
 </body>
 </html>
