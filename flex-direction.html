@@ -211,7 +211,8 @@
             justify-content: flex-start;
             align-items: flex-start;
         }
-        .container20{
+
+        .container20 {
             width: 500px;
             height: 500px;
             border: 1px solid black;
@@ -221,13 +222,15 @@
             align-items: flex-start;
         }
 
-        .container20 div:nth-child(2){
+        .container20 div:nth-child(2) {
             align-self: center;
         }
-        .container20 div:nth-child(3){
+
+        .container20 div:nth-child(3) {
             align-self: flex-end;
         }
-        .container21{
+
+        .container21 {
             width: 500px;
             height: 500px;
             border: 1px solid black;
@@ -237,12 +240,40 @@
             align-items: flex-start;
         }
 
-        .container21 div:nth-child(1){
-           align-self: flex-end;
+        .container21 div:nth-child(1) {
+            align-self: flex-end;
         }
-        .container21 div:nth-child(2){
-           align-self: center;
+
+        .container21 div:nth-child(2) {
+            align-self: center;
         }
+
+        .container22 {
+            width: 320px;
+            height: 320px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+        .container23 {
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            /*justify-content: space-between;*/
+            align-content: space-between;
+        }
+        .container23 .row {
+            display: flex;
+            justify-content: space-between;
+            flex-basis: 100%;
+        }
+
     </style>
 </head>
 <body>
@@ -347,5 +378,31 @@
     <div class="size">222</div>
     <div class="size">333</div>
 </div>
+
+<div class="container22">
+    <div class="size">111</div>
+    <div class="size">222</div>
+    <div class="size">333</div>
+</div>
+
+<div class="container23">
+    <div class="row">
+        <div class="size">111</div>
+        <div class="size" id="222">222</div>
+    </div>
+    <div class="row">
+        <div class="size">3333</div>
+        <div class="size">4444</div>
+    </div>
+</div>
+
+<div class="container24">
+    <div class="size">1</div>
+    <div class="size">2</div>
+    <div class="size">3</div>
+    <div class="size">4</div>
+    <div class="size">5</div>
+</div>
+
 </body>
 </html>
